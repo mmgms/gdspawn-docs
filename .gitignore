@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+.venv
+venv/
+
+# Sphinx build output
+docs/build/
+docs/_build/
+
+# Sphinx cache
+docs/source/_autosummary/
+docs/source/_generated/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Coverage / test
+.coverage
+htmlcov/
+.pytest_cache/
+
+
+*.png~
