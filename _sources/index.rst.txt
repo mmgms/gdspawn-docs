@@ -1,17 +1,34 @@
-.. GdSpawnDocs documentation master file, created by
-   sphinx-quickstart on Sat Jan 17 15:53:53 2026.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Welcome to the GdSpawn documentation!
+=====================================================
 
-GdSpawnDocs documentation
-=========================
+**GdSpawn** is a plugin for the Godot game engine to expedite level design with many tools to spawn scenes. It can help with modular scenes, by allowing you to 
+snap to a configurable grid, and also with more organic levels.
+`Get it now on itch.io <https://mmgms.itch.io/GdSpawn>`_!
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
 
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :hidden:
+   :maxdepth: 4
+   :caption: Quickstart
 
+   installation
+
+.. toctree::
+   :hidden:
+   :maxdepth: 4
+   :caption: Manual
+
+   interface
+   plane_placement
+   surface_placement
+   curve_placement
+   physics_placement
+   settings
+   
+.. toctree::
+   :hidden:
+   :maxdepth: 4
+   :caption: About
+   
+   license
