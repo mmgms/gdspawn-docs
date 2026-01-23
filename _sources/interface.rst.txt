@@ -1,14 +1,12 @@
 Interface
 =========
 
-
-
 Main Dock
 -------------------
 
 The main dock allows you to create libraries and select the current placement mode.
 
-.. image:: docs\images\interface.png
+.. image:: ../images/interface.png
 
 
 #. The Scene Palette is where you can create and use scene libraries, just drag and drop .tscn files and save to a SceneLibrary resource on your project files.
@@ -26,11 +24,26 @@ The main dock allows you to create libraries and select the current placement mo
 #. You can detach the main dock to make use of a second monitor.
 
 
+For each scene in the scene palette you have a few options, mainly to set the thumbnail preview. There are a few presets for the preview, or you can have a custom 
+angle for the preview by opening the dynamic preview and orbiting/zooming with middle mouse button.
+
+.. image:: ../images/preview_options.png
+
+.. image:: ../images/dynamic_preview.gif
+
+
+You can set the preview for the entire library by right clicking on the library name. The individual scene preview have higher priority than the library settings.
+In the project settings you can set a global preview preset that has the lowest priority and is overridden by libraries settings and individual scenes settings.
+You can generate a temporary scene asset zoo for the library by clicking on Generate Asset Zoo.
+	
+.. image:: ../images/library_options.png
+
+
 Layers Dock
 -------------------
 The Layer Explorer allows you to create layers to organize your scene hierarchy.
 
-.. image:: docs\images\layers_dock.png
+.. image:: ../images/layers_dock.png
 
 #. Create a new layer under the selected layer (if no layer is selected create a new root layer).
 
@@ -56,7 +69,7 @@ GdSpawn Node
 -------------------
 The GdSpawn node is required to set the collision masks for the Surface, Curve, Physics Placement Modes, and their spawn profiles.
 
-.. image:: docs\images\interface.png
+.. image:: ../images/gdspawn_node.png
 
 #. Surface Placement Mode collision mask.
 

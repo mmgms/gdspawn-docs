@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; GdSpawnDocs 1.0.0 documentation</title>
+  <title>Curve Placement &mdash; GdSpawnDocs 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -19,7 +19,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="physics_placement.html" />
+    <link rel="next" title="Physics Placement" href="physics_placement.html" />
     <link rel="prev" title="Surface Placement" href="surface_placement.html" /> 
 </head>
 
@@ -47,15 +47,17 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Manual</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plane_placement.html">Plane Placement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="surface_placement.html">Surface Placement</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Curve Placement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="physics_placement.html">Physics Placement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="settings.html">Settings and Configuration</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="license.html">End-User License Agreement (EULA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
         </div>
@@ -72,7 +74,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">Curve Placement</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/curve_placement.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,13 +84,31 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="curve-placement">
+<h1>Curve Placement<a class="headerlink" href="#curve-placement" title="Link to this heading"></a></h1>
+<p>The curve placement mode allows you to place scenes along a curve, this is useful to place fences, paths or other repeated elements.</p>
+<img alt="_images/curve_placement.png" src="_images/curve_placement.png" />
+<p>You can create a curve under the current spawn parent with the given name. The collision mask and the Curve Spawn Profile on the GdSpawn node
+(see <a class="reference internal" href="interface.html"><span class="doc">Interface</span></a>) will be used to create a GdSpawnPath3D.
+The Curve Spawn profile lets you select which scenes should be spawned with their spawn chance (between 0-100) and whether or not it should be used.
+You can also set which axis should be considered the up/forward axis.</p>
+<img alt="_images/curve_spawn_profile.png" src="_images/curve_spawn_profile.png" />
+<p>The curve spawn settings lets you choose whether or not the scenes should be placed tryng to avoid overlaps using the scene aabb, and the padding between scenes.</p>
+<img alt="_images/curve_spawn_settings.png" src="_images/curve_spawn_settings.png" />
+<p>Once the curve is added to the scene, you can manipulate it using the toolbar in the 3D editor, similar to regular Path3D.</p>
+<img alt="_images/curve_toolbar.png" src="_images/curve_toolbar.png" />
+<p>The options let you choose the handles behavior and whether to snap to colliders according to the curve collision mask (on by default).</p>
+<img alt="_images/curve_toolbar_options.png" src="_images/curve_toolbar_options.png" />
+<p>Once the curve is added you can change its properties in the inspector and maunally update it if necessary.</p>
+<img alt="_images/curve_inspector.png" src="_images/curve_inspector.png" />
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="surface_placement.html" class="btn btn-neutral float-left" title="Surface Placement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="physics_placement.html" class="btn btn-neutral float-right" title="&lt;no title&gt;" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="physics_placement.html" class="btn btn-neutral float-right" title="Physics Placement" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

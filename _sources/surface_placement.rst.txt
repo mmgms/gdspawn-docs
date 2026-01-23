@@ -1,5 +1,5 @@
 Surface Placement
-=============
+==========================
 
 
 The Surface Placement Mode lets you place scenes on colliders and optionally align them with the collider normal.
@@ -7,7 +7,7 @@ The Surface Placement Mode lets you place scenes on colliders and optionally ali
 You can select the collision mask for this mode on the GdSpawn node (see :doc:`interface`).
 
 
-.. image:: docs\images\surface_placement.png
+.. image:: ../images/surface_placement.png
 
 
 

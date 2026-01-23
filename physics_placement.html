@@ -6,7 +6,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; GdSpawnDocs 1.0.0 documentation</title>
+  <title>Physics Placement &mdash; GdSpawnDocs 1.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
 
@@ -20,7 +20,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Settings and Configuration" href="settings.html" />
-    <link rel="prev" title="&lt;no title&gt;" href="curve_placement.html" /> 
+    <link rel="prev" title="Curve Placement" href="curve_placement.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,15 +47,17 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Manual</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="interface.html">Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="plane_placement.html">Plane Placement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="surface_placement.html">Surface Placement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="curve_placement.html">Curve Placement</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Physics Placement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="settings.html">Settings and Configuration</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="license.html">End-User License Agreement (EULA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
         </div>
@@ -72,7 +74,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">Physics Placement</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/physics_placement.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,12 +84,34 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  
+  <section id="physics-placement">
+<h1>Physics Placement<a class="headerlink" href="#physics-placement" title="Link to this heading"></a></h1>
+<p>The physics placement mode allows you to add scenes by dropping them and letting them fall and interact with the existing geometry to create a more natural look.
+In this mode a gizmo will appear in the scene and by dragging you can start to drop scenes according to the collision mask, and the random drop profile set
+on the current GdSpawn node (<a class="reference internal" href="interface.html"><span class="doc">Interface</span></a>). The simulation will run until all the physics object are settled or a maximum time has passed or the simulation is
+ended manually. You can undo/redo only at the end of the simulation.</p>
+<p>The random spawn profile lets you define a list of scenes that should be spawned when dragging the gizmo.</p>
+<img alt="_images/physics_random_profile.png" src="_images/physics_random_profile.png" />
+<p>You can set for each scene the chance (between 0-100) that it will be spawned and whether it is used or not.
+You can drag and drop scenes from the scene palette to populate the scene field of the random spawn profile.
+Each profile can be saved as a resource.</p>
+<img alt="_images/physics_placement.png" src="_images/physics_placement.png" />
+<ol class="arabic simple">
+<li><p>The radius the scenes are spawned in.</p></li>
+<li><p>The height the scenes are spawned at.</p></li>
+<li><p>The interval between each scene spawn.</p></li>
+<li><p>Enable/Disable rotation randomization for the scene spawned.</p></li>
+<li><p>Maximum vertical distance the scenes are allowed to travel, useful for mitigating scenes clipping out of bounds of geometry.</p></li>
+<li><p>Maximum time the simulation is allowed to run before committing the scenes.</p></li>
+<li><p>Press this button to stop the simulation early.</p></li>
+</ol>
+</section>
+
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="curve_placement.html" class="btn btn-neutral float-left" title="&lt;no title&gt;" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="curve_placement.html" class="btn btn-neutral float-left" title="Curve Placement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="settings.html" class="btn btn-neutral float-right" title="Settings and Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

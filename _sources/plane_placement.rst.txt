@@ -1,5 +1,5 @@
 Plane Placement
-=============
+==========================
 
 
 The Plane Placement Mode lets you add scenes on a plane. Combined with the snapping is useful for working with modular scenes.
@@ -18,13 +18,15 @@ To reset the current scene transform you can press :kbd:`Shift+E` or press the r
 
 Pressing :kbd:`Space` when no scene is selected will select the last selected scene in the scene palette.
 
+To place and select a scene hold :kbd:`Alt` when clicking.
+
 If snapping is enabled you can temporarely disable it by pressing :kbd:`Ctrl`.
 
 
 This mode is based on the concept of a local grid that can have an arbitrary offset and rotation around the y axis:
 
 
-.. image:: docs\images\plane_placement.png
+.. image:: ../images/plane_placement.png
 
 
 #. Select which plane on the local grid to place scenes to (XZ is the default normal to the y axis, YZ is normal to the x axis and XY to the z axis).

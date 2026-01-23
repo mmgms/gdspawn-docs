@@ -56,11 +56,13 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="plane_placement.html">Plane Placement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="surface_placement.html">Surface Placement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="curve_placement.html">Curve Placement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="physics_placement.html">Physics Placement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="settings.html">Settings and Configuration</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">About</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="license.html">End-User License Agreement (EULA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
 </ul>
 
         </div>
@@ -92,7 +94,7 @@
 <section id="main-dock">
 <h2>Main Dock<a class="headerlink" href="#main-dock" title="Link to this heading"></a></h2>
 <p>The main dock allows you to create libraries and select the current placement mode.</p>
-<img alt="docsimagesinterface.png" src="docsimagesinterface.png" />
+<img alt="_images/interface.png" src="_images/interface.png" />
 <ol class="arabic simple">
 <li><p>The Scene Palette is where you can create and use scene libraries, just drag and drop .tscn files and save to a SceneLibrary resource on your project files.</p></li>
 <li><p>You can choose which node to spawn scenes under either by drag and drop or by selecting a node and clicking the button.</p></li>
@@ -102,11 +104,19 @@
 <li><p>Select the current placement mode.</p></li>
 <li><p>You can detach the main dock to make use of a second monitor.</p></li>
 </ol>
+<p>For each scene in the scene palette you have a few options, mainly to set the thumbnail preview. There are a few presets for the preview, or you can have a custom
+angle for the preview by opening the dynamic preview and orbiting/zooming with middle mouse button.</p>
+<img alt="_images/preview_options.png" src="_images/preview_options.png" />
+<img alt="_images/dynamic_preview.gif" src="_images/dynamic_preview.gif" />
+<p>You can set the preview for the entire library by right clicking on the library name. The individual scene preview have higher priority than the library settings.
+In the project settings you can set a global preview preset that has the lowest priority and is overridden by libraries settings and individual scenes settings.
+You can generate a temporary scene asset zoo for the library by clicking on Generate Asset Zoo.</p>
+<img alt="_images/library_options.png" src="_images/library_options.png" />
 </section>
 <section id="layers-dock">
 <h2>Layers Dock<a class="headerlink" href="#layers-dock" title="Link to this heading"></a></h2>
 <p>The Layer Explorer allows you to create layers to organize your scene hierarchy.</p>
-<img alt="docsimageslayers_dock.png" src="docsimageslayers_dock.png" />
+<img alt="_images/layers_dock.png" src="_images/layers_dock.png" />
 <ol class="arabic simple">
 <li><p>Create a new layer under the selected layer (if no layer is selected create a new root layer).</p></li>
 <li><p>You can browse and select the layers here and hide/show individual layers or delete them (the children are not automatically deleted).</p></li>
@@ -122,14 +132,14 @@
 <section id="gdspawn-node">
 <h2>GdSpawn Node<a class="headerlink" href="#gdspawn-node" title="Link to this heading"></a></h2>
 <p>The GdSpawn node is required to set the collision masks for the Surface, Curve, Physics Placement Modes, and their spawn profiles.</p>
-<img alt="docsimagesinterface.png" src="docsimagesinterface.png" />
+<img alt="_images/gdspawn_node.png" src="_images/gdspawn_node.png" />
 <ol class="arabic simple">
 <li><p>Surface Placement Mode collision mask.</p></li>
 <li><p>Curve Placement Mode collision mask.</p></li>
-<li><p>Curve Placement Spawn Profile (see <a class="reference internal" href="curve_placement.html"><span class="doc">&lt;no title&gt;</span></a>).</p></li>
-<li><p>Curve Placement Spawn Settings (see <a class="reference internal" href="curve_placement.html"><span class="doc">&lt;no title&gt;</span></a>).</p></li>
+<li><p>Curve Placement Spawn Profile (see <a class="reference internal" href="curve_placement.html"><span class="doc">Curve Placement</span></a>).</p></li>
+<li><p>Curve Placement Spawn Settings (see <a class="reference internal" href="curve_placement.html"><span class="doc">Curve Placement</span></a>).</p></li>
 <li><p>Physics Placement Mode collision mask.</p></li>
-<li><p>Physics Placement Spawn Profile (see <a class="reference internal" href="physics_placement.html"><span class="doc">&lt;no title&gt;</span></a>).</p></li>
+<li><p>Physics Placement Spawn Profile (see <a class="reference internal" href="physics_placement.html"><span class="doc">Physics Placement</span></a>).</p></li>
 </ol>
 </section>
 </section>
