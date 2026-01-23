@@ -1,8 +1,6 @@
 Interface
 =========
 
-
-
 Main Dock
 -------------------
 
@@ -36,6 +34,7 @@ angle for the preview by opening the dynamic preview and orbiting/zooming with m
 
 You can set the preview for the entire library by right clicking on the library name. The individual scene preview have higher priority than the library settings.
 In the project settings you can set a global preview preset that has the lowest priority and is overridden by libraries settings and individual scenes settings.
+You can generate a temporary scene asset zoo for the library by clicking on Generate Asset Zoo.
 	
 .. image:: ../images/library_options.png
 
